@@ -37,19 +37,16 @@ The AQI Visualizer project focuses on testing essential classes responsible for 
 
 ## Integration of Testing Tool
 
-1. **Download Google Test:**
-   - Download the Google Test framework from the official repository: [Google Test GitHub](https://github.com/google/googletest).
-   - Follow the instructions in the repository to build the framework.
+1. **Google Test Setup in Visual Studio:**
+   - Download Google Test via the Visual Studio NuGet Package Manager.
+   - This step automatically configures the necessary settings for Google Test in your Visual Studio project.
 
 2. **Include Google Test in Your Project:**
-   - Include the necessary Google Test headers in your test files (e.g., `#include <gtest/gtest.h>`).
+   - Verify that the necessary Google Test headers are included in your test files (e.g., `#include <gtest/gtest.h>`).
 
-3. **Link Your Project with Google Test:**
-   - Link your project with the Google Test library. This may involve linking against the compiled Google Test library (e.g., `libgtest.a`).
-
-4. **Configure Your Test Runner:**
+3. **Configure Your Test Runner:**
    - Set up a test runner that includes and runs your test files.
-   - Configure the test runner to link against the Google Test library.
+   - Ensure the test runner is configured to link against the Google Test library, which is handled automatically in Visual Studio after the installation.
 
-5. **Run Your Tests:**
+4. **Run Your Tests:**
    - Execute the test runner to run your tests and verify that everything is set up correctly.
